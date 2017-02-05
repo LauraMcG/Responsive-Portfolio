@@ -1,0 +1,296 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background-image: url("../images/asanoha.png");
+	background-color: #999;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+	color: #777;
+}
+
+a {
+	color: #333;
+}
+
+.top{
+	background-color: #fff;
+	width: 100%;
+	height: 72px;
+	border-color: #ccc;
+	border-width: 0px 0px 2px 0px;
+	border-style: solid;
+}
+
+.wrapper {
+	padding: 0px;
+	width: 960px;
+	/*min-height: */
+	margin: 0 auto -75px auto;
+}
+
+/*.wrapper:after {
+	content: "";
+	display: block;
+}*/
+
+.head {
+	width: 960px;
+	position: absolute;
+	top:0px;
+	margin-bottom: 30px;
+}
+
+
+.nav {
+	width: 200px;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	float: right;
+	color: #999;
+	position: relative;
+}
+
+.logo {
+	background-color: #4aaaa5;
+	font-family: 'Georgia', Times, serif;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+	width: 235px;
+	height: 70px;
+	padding: 20px;
+	padding-bottom: 0px
+}
+
+.content {
+	width: 960px;
+	padding-bottom: 20px;
+}
+
+.main {
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #ddd;
+	border-style: solid;
+	width: 650px;
+	padding: 20px;
+	margin: 20px 20px 30px 0px;
+	float:left;
+}
+
+.main hr {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #dcdcdc;
+	margin: 20px 0px;
+}
+
+.main p {
+	position: relative;
+	line-height: 150%;
+	overflow: auto;
+}
+
+.profile img{
+	float: left;
+	margin-right: 20px;
+	width: 100px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+  }
+
+
+/*for portfolio gallery*/
+
+.gallery {
+	margin: auto;
+}
+
+.image {
+	position: relative;
+	float: right;
+	margin: 25px;
+	width: 250px;
+}
+
+.gallery img {
+	width: 250px;
+}
+
+.banner {
+	position: absolute;
+	bottom: 12px;
+	left: 0px;
+	width: 100%;
+	background-color: #4aaaa5;
+	color: #fff;
+	font-family: 'Georgia', Times, serif;
+	text-align: center;
+	border: none;
+	padding: 10px 0px;
+	font-size: 20px;
+	z-index: 1;
+}
+
+.connect {
+	width: 270px;
+	float: right;
+	background-color: #fff;
+	border-width: 1px;
+	border-color: #ddd;
+	border-style: solid;
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.connect hr {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #dcdcdc;
+	margin: 10px 0px;
+}
+
+.connect img {
+	vertical-align: center;
+	margin: 5px;
+	width: 63px;
+}
+
+h1,
+h2 {
+	font-family: 'Georgia', Times, serif;
+	color: #4aaaa5;
+	padding: 0px;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+h2 {
+	font-size: 20px;
+}
+
+
+
+input,
+textarea {
+	width: 100%;
+	border-color: #dcdcdc;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	margin: 10px;
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+button {
+	background-color: #4aaaa5;
+	color: #fff;
+	text-align: center;
+	border: none;
+	font-size: 16px;
+	padding: 15px 32px;
+	margin: 10px;
+}
+
+.footer, .page-wrap:after {
+  height: 75px; 
+ }
+
+.footer,
+ .push {
+ 	/*overflow: auto;*/
+ 	clear: both;
+	width: 100%;
+	background-color: #666;
+	color: #999;
+	text-align: center;
+	padding: 20px;
+	border-width: 7px 0px 0px 0px;
+	border-style: solid;
+	border-color: #4aaaa5;
+	height: 65px;
+}
+
+/* media query 960p */
+
+@media screen and (max-width: 980px) {
+	.head {
+		width:85%;
+	}
+
+	.wrapper {
+		width: 85%;
+	}
+
+	.nav {
+		position: relative;
+		right: 0px;
+	}
+
+
+	.main {
+		width: 55%;
+	}
+/* FIX HOW THE PARAGRAPHS ON ABOUT ME SHOW UP RIGHT AGAINST THE IMAGE*/
+	.main p {
+		clear: both;
+	}
+
+	.profile img {
+		width: 100%
+	}
+
+	.connect {
+		width: 30%;
+		position: relative;
+		right:0px;
+	}
+
+	.connect img {
+		width: 50px;
+	}
+}
+
+/* START 760p*/
+@media screen and (max-width: 760px) {
+
+	.head {
+		width: 95%;
+	}
+
+	.wrapper{
+		width: 95%;
+	}
+
+	.main {
+		width:95%;
+	}
+
+	.connect{
+		width: 100%;
+		float: left;
+		clear: both;
+		overflow: auto;
+
+	}
+
+}
