@@ -33,14 +33,8 @@ a {
 .wrapper {
 	padding: 0px;
 	width: 960px;
-	/*min-height: */
 	margin: 0 auto -75px auto;
 }
-
-/*.wrapper:after {
-	content: "";
-	display: block;
-}*/
 
 .head {
 	width: 960px;
@@ -95,7 +89,6 @@ a {
 }
 
 .main p {
-	position: relative;
 	line-height: 150%;
 	overflow: auto;
 }
@@ -116,10 +109,6 @@ a {
 
 
 /*for portfolio gallery*/
-
-.gallery {
-	margin: auto;
-}
 
 .image {
 	position: relative;
@@ -217,7 +206,6 @@ button {
 
 .footer,
  .push {
- 	/*overflow: auto;*/
  	clear: both;
 	width: 100%;
 	background-color: #666;
@@ -230,7 +218,7 @@ button {
 	height: 65px;
 }
 
-/* media query 960p */
+/* media query 980p */
 
 @media screen and (max-width: 980px) {
 	.head {
@@ -246,9 +234,22 @@ button {
 		right: 0px;
 	}
 
-
 	.main {
 		width: 55%;
+		padding: 20px;
+	}
+
+	.image {
+		margin: 10px 0px;
+		width: 100%;
+	}
+
+	.gallery img {
+		width: 100%;
+	}
+
+	.banner {
+		margin-bottom: 5px;
 	}
 /* FIX HOW THE PARAGRAPHS ON ABOUT ME SHOW UP RIGHT AGAINST THE IMAGE*/
 	.main p {
@@ -270,7 +271,7 @@ button {
 	}
 }
 
-/* START 760p*/
+/* START 768p*/
 @media screen and (max-width: 760px) {
 
 	.head {
@@ -282,15 +283,76 @@ button {
 	}
 
 	.main {
-		width:95%;
+		width:100%;
+	}
+
+
+	.image {
+		margin: 14px;
+		width: 45%;
+	}
+/* FIX BETWEEN 650-640 px*/
+	.gallery img {
+		width: 100%;
+	}
+
+	.banner {
+		margin-bottom: 0px;
+	}
+
+
+	.main p {
+		clear: none;
+	}
+
+	.profile img {
+		width: 50%;
+		float: left;
 	}
 
 	.connect{
-		width: 100%;
-		float: left;
-		clear: both;
-		overflow: auto;
-
+		width:100%;
+		margin-bottom: 30px;
 	}
 
 }
+
+/* START 640 */
+
+@media screen and (max-width: 640px) {
+
+/*FIX TOP NAV BAR -- NAV STACKED BELOW LOGO*/
+
+	.logo {
+		width: 100%;
+	}	
+
+	.nav {
+		position: relative;
+		clear: both;
+
+	}
+
+	.profile img {
+		width: 100%;
+	}
+
+	.image {
+		margin: 15px 0px;
+		width: 100%;
+	}
+
+	.gallery img {
+		width: 100%;
+	}
+
+	.banner {
+		margin-bottom: 5px;
+	}
+
+	.main p {
+		clear: both;
+	}
+
+}
+
