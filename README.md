@@ -11,5 +11,5 @@ Please view my current portfolio site at [lauramcginn.net](lauramcginn.net)!
 
 ## Technologies Used
 - HTML
-- CSS
+- CSS with media queries.
 - reset.css courtesy of [http://meyerweb.com/eric/tools/css/reset/](meyerweb.com)
